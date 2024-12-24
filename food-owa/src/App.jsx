@@ -1,14 +1,26 @@
-import { useState } from 'react';
-import './App.css'
+
+import Navbar from './components/Navbar';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 function App() {
   
 
   return (
     <>
-      <h1>Well Done</h1>
+    <div className="App">
+      <Router>
+      <Navbar />
+      <Routes> 
+            {/* Define your routes here */}
+            {/* <Route path="/" element={<Home />} /> 
+            <Route path="/about" element={<About />} />  */}
+            {/* Add more routes as needed */}
+          </Routes>
+
+      </Router>
+    </div>
     </>
   )
 }
 
-export default App
+export default App;
